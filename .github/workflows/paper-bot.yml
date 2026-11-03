@@ -1,0 +1,37 @@
+name: pump-paper-bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+concurrency:
+  group: paper-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install websockets requests
+      - name: Bot chalao (5.5 ghante)
+        env:
+          RUN_HOURS: "5.5"
+        run: python pump_paper_test.py
+      - name: Result save karo
+        if: always()
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "paper-bot@users.noreply.github.com"
+          git add paper_trades.csv paper_state.json report.txt 2>/dev/null || true
+          git commit -m "paper bot update $(date -u +%F_%H:%M)" || echo "kuch naya nahi"
+          git pull --rebase || true
+          git push
