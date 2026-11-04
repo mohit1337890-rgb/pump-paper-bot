@@ -1,5 +1,5 @@
 """
-Pump.fun PAPER TEST  v3  (nakli paise - koi wallet / private key nahi)
+Pump.fun PAPER TEST  v4  (nakli paise - koi wallet / private key nahi)
 
 Exit rules (Mohit ke, dono strategy mein same):
   EXIT 1: 2x pe 50% becho
@@ -9,6 +9,8 @@ Entry (2 strategy saath-saath test hoti hain, alag-alag hisaab):
   A_mohit : MC $30K-60K  + pichhle 5 min mein 30%+ badha   (Mohit ka rule)
   B_jaldi : MC $15K-35K  + pichhle 5 min mein 30%+ badha   (same rule, graduation se pehle)
 
+v4: naya coin PumpPortal se (free), price DexScreener se har ~10 sec (free).
+    (PumpPortal ka trade feed ab paid hai - isliye v3 mein trade 0 aate the)
 v3 mein naya:
   - Graduation ke baad bhi price milta hai (DexScreener se har 10 sec)
   - 2 strategy ek saath, report mein dono ka alag result
@@ -30,8 +32,10 @@ TRAIL_DROP   = 30          # peak se kitna % gire to sab becho
 PAPER_SIZE   = 10.0        # har trade $10 (nakli)
 FEE_PCT      = 1.0         # ~1% fee har buy/sell pe
 WATCH_MIN    = 60          # normal coin kitne minute tak dekhna
-DEX_WATCH_FROM = 12_000    # is MC ke upar wale coins DexScreener se bhi dekho
+DEX_WATCH_FROM = 12_000    # is MC ke upar gaye coins ko lamba dekho
 DEX_WATCH_MIN  = 240       # aise coins kitne minute tak dekhna
+DEAD_AFTER_MIN = 15        # 15 min mein $8K tak bhi nahi gaya to chhod do (sirf data bachane ke liye)
+DEAD_MC        = 8_000
 DEX_POLL_SEC   = 10
 SOL_PRICE_FALLBACK = 150.0
 TRADES_CSV   = "paper_trades.csv"
@@ -191,13 +195,15 @@ def fetch_dex(chunk):
 async def dex_poller():
     while True:
         await asyncio.sleep(DEX_POLL_SEC)
-        mints = [m for m in dex_watch if m in coins]
+        mints = list(coins.keys())
         for i in range(0, len(mints), 30):
             chunk = mints[i:i + 30]
+            await asyncio.sleep(0.25)
             try:
                 data = await asyncio.to_thread(fetch_dex, chunk)
             except Exception:
                 stats["dex_errors"] += 1
+                await asyncio.sleep(5)
                 continue
             best = {}
             for p in data if isinstance(data, list) else []:
@@ -238,7 +244,7 @@ def report():
     r = stats["reached"]
     L.append(f"Data: naye coins {stats['seen']} | inme se kitne pahunche -> "
              f"10K:{r['10K']} 20K:{r['20K']} 30K:{r['30K']} 60K:{r['60K']} 100K:{r['100K']}")
-    L.append(f"      trade msgs {stats['trade_msgs']} | DexScreener updates {stats['dex_updates']} "
+    L.append(f"      abhi dekh rahe coins {len(coins)} | DexScreener updates {stats['dex_updates']} "
              f"(errors {stats['dex_errors']}) | SOL ${sol_price:.2f}")
     L.append("=" * 60)
     text = "\n".join(L)
@@ -259,9 +265,6 @@ async def run_once(start, timers):
     async with websockets.connect(WS_URL, ping_interval=20, ping_timeout=20,
                                   max_size=2**22) as ws:
         await ws.send(json.dumps({"method": "subscribeNewToken"}))
-        keys = list(coins.keys())
-        for i in range(0, len(keys), 100):
-            await ws.send(json.dumps({"method": "subscribeTokenTrade", "keys": keys[i:i + 100]}))
         say(f"{ts()} Connected. Live coins sun raha hoon...")
         while True:
             if RUN_HOURS and time.time() - start > RUN_HOURS * 3600:
@@ -279,7 +282,6 @@ async def run_once(start, timers):
                     stats["seen"] += 1
                     coins[mint] = {"name": msg.get("symbol") or msg.get("name") or mint[:6],
                                    "born": now, "hist": [(now, mc)], "last_mc": mc, "max_mc": mc}
-                    await ws.send(json.dumps({"method": "subscribeTokenTrade", "keys": [mint]}))
                 elif mint in coins:
                     stats["trade_msgs"] += 1
                     update(mint, mc, now)
@@ -291,11 +293,9 @@ async def run_once(start, timers):
                         continue
                     age = now - c["born"]
                     if (m in dex_watch and age > DEX_WATCH_MIN * 60) or \
-                       (m not in dex_watch and age > WATCH_MIN * 60):
+                       (m not in dex_watch and age > WATCH_MIN * 60) or \
+                       (age > DEAD_AFTER_MIN * 60 and c.get("max_mc", 0) < DEAD_MC):
                         drop.append(m)
-                for i in range(0, len(drop), 100):
-                    await ws.send(json.dumps({"method": "unsubscribeTokenTrade",
-                                              "keys": drop[i:i + 100]}))
                 for m in drop:
                     coins.pop(m, None)
                     dex_watch.discard(m)
@@ -317,7 +317,8 @@ async def main():
     say(f"SOL = ${sol_price}" + (f"   (chalega {RUN_HOURS} ghante)" if RUN_HOURS else ""))
     start = time.time()
     t = time.time()
-    timers = {"cleanup": t, "save": t, "price": t, "report": t, "report_gap": 180, "commit": t}
+    timers = {"cleanup": t, "save": t, "price": t, "report": t, "report_gap": 180,
+              "commit": t - COMMIT_EVERY + 300}      # pehla save 5 min pe
     poller = asyncio.create_task(dex_poller())
     while True:
         try:
