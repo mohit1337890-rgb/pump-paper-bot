@@ -34,6 +34,15 @@ for _eid, _emin, _emax in [("A", 30_000, 60_000), ("B", 15_000, 35_000)]:
                            "rise": 30, "exit": _x})
 # S_snipe: naya coin bante hi launch price pe kharido, 2x pe aadha, 5x pe baaki (Mohit ka rule)
 STRATEGIES.append({"id": "S_snipe", "mc_min": 0, "mc_max": 0, "rise": 0, "exit": "snipe"})
+# Filter test (guide se): entry A rule + 5 min mein buy ratio >= 0.6 aur kam se kam 8 buy
+STRATEGIES.append({"id": "F_guide", "mc_min": 30_000, "mc_max": 60_000, "rise": 30,
+                   "exit": "guide", "filter": True})
+STRATEGIES.append({"id": "F_mohit", "mc_min": 30_000, "mc_max": 60_000, "rise": 30,
+                   "exit": "base", "filter": True})
+F_MIN_BUYS   = 8
+F_BUY_RATIO  = 0.6
+G_TP_PCT     = 15          # guide: +15% pe sab becho
+G_SL_PCT     = 7           # guide: -7% pe sab becho
 SNIPE_HALF_AT = 2.0
 SNIPE_ALL_AT  = 5.0
 SL_PCT       = 40          # sl40: entry se kitna % gire
@@ -173,6 +182,11 @@ def check_entry(s, mint, c, now, mc):
     base = old[-1] if old else c["hist"][0][1]
     if base <= 0 or mc < base * (1 + s["rise"] / 100):
         return
+    if s.get("filter"):
+        b, sl = c.get("m5_buys", 0), c.get("m5_sells", 0)
+        if b < F_MIN_BUYS or b / max(b + sl, 1) < F_BUY_RATIO:
+            st["filtered"] = st.get("filtered", 0) + 1
+            return
     if st.get("cash", START_CASH) < PAPER_SIZE:      # wallet khaali - trade skip
         st["skipped"] = st.get("skipped", 0) + 1
         return
@@ -202,6 +216,14 @@ def check_exit(s, mint, mc, now):
     if not p:
         return
     p["peak"] = max(p["peak"], mc)
+    if s["exit"] == "guide":
+        if mc >= p["entry_mc"] * (1 + G_TP_PCT / 100):
+            sell(sid, p, 1.0, mc, f"TP +{G_TP_PCT}%")
+            st["closed"].append(st["positions"].pop(mint))
+        elif mc <= p["entry_mc"] * (1 - G_SL_PCT / 100):
+            sell(sid, p, 1.0, mc, f"SL -{G_SL_PCT}%")
+            st["closed"].append(st["positions"].pop(mint))
+        return
     if s["exit"] == "snipe":
         if not p["half_sold"] and mc >= p["entry_mc"] * SNIPE_HALF_AT:
             sell(sid, p, 0.5, mc, "2x - aadha")
@@ -293,10 +315,13 @@ async def dex_poller():
                     stats["spikes_ignored"] = stats.get("spikes_ignored", 0) + 1
                     continue
                 liq = (p.get("liquidity") or {}).get("usd") or 0
+                m5 = (p.get("txns") or {}).get("m5") or {}
                 if a and mc > 0 and (a not in best or liq > best[a][1]):
-                    best[a] = (mc, liq)
+                    best[a] = (mc, liq, m5.get("buys", 0) or 0, m5.get("sells", 0) or 0)
             now = time.time()
-            for a, (mc, _) in best.items():
+            for a, (mc, _, b5, s5) in best.items():
+                if a in coins:
+                    coins[a]["m5_buys"], coins[a]["m5_sells"] = b5, s5
                 stats["dex_updates"] += 1
                 update(a, mc, now)
 
@@ -330,8 +355,11 @@ def report():
             L.append("")
             continue
         xname = {"base": "sirf Mohit ke rules", "sl40": f"+ 2x se pehle -{SL_PCT}% pe becho",
-                 "t60": f"+ {TIME_EXIT//60} min mein 2x nahi to becho"}[s["exit"]]
-        L.append(f"[{s['id']}]  entry ${s['mc_min']//1000}K-{s['mc_max']//1000}K | exit: {xname}")
+                 "t60": f"+ {TIME_EXIT//60} min mein 2x nahi to becho",
+                 "guide": f"TP +{G_TP_PCT}% / SL -{G_SL_PCT}%"}[s["exit"]]
+        ftxt = (f" + filter (5min: {F_MIN_BUYS}+ buy, buy ratio {F_BUY_RATIO}+;"
+                f" filter ne roka: {st.get('filtered', 0)})") if s.get("filter") else ""
+        L.append(f"[{s['id']}]  entry ${s['mc_min']//1000}K-{s['mc_max']//1000}K{ftxt} | exit: {xname}")
         L.append(f"  Band trades: {len(st['closed'])}  (jeete {wins}, haare {len(st['closed'])-wins})")
         L.append(f"  Khule trades: {len(st['positions'])}  (abhi ki value ${oval:.2f})")
         cash = st.get("cash", START_CASH)
