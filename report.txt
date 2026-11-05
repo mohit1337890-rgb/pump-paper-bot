@@ -1,36 +1,36 @@
 ============================================================
-REPORT  2026-11-05 10:03:28 UTC
+REPORT  2026-11-05 10:18:49 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 1  (jeete 1, haare 0)
-  Khule trades: 12  (abhi ki value $90.39)
-  Total lagaya $130.00 | wapas/value $113.45 | P&L $-16.55
+  Khule trades: 13  (abhi ki value $107.81)
+  Total lagaya $140.00 | wapas/value $130.87 | P&L $-9.13
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
-  Band trades: 8  (jeete 1, haare 7)
-  Khule trades: 5  (abhi ki value $86.86)
-  Total lagaya $130.00 | wapas/value $120.10 | P&L $-9.90
+  Band trades: 9  (jeete 1, haare 8)
+  Khule trades: 5  (abhi ki value $103.74)
+  Total lagaya $140.00 | wapas/value $137.86 | P&L $-2.14
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
-  Band trades: 3  (jeete 1, haare 2)
-  Khule trades: 10  (abhi ki value $89.65)
-  Total lagaya $130.00 | wapas/value $113.44 | P&L $-16.56
+  Band trades: 4  (jeete 1, haare 3)
+  Khule trades: 10  (abhi ki value $106.08)
+  Total lagaya $140.00 | wapas/value $130.87 | P&L $-9.13
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
-  Khule trades: 17  (abhi ki value $89.54)
-  Total lagaya $200.00 | wapas/value $130.99 | P&L $-69.01
+  Khule trades: 18  (abhi ki value $83.35)
+  Total lagaya $210.00 | wapas/value $124.80 | P&L $-85.20
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
-  Band trades: 13  (jeete 3, haare 10)
-  Khule trades: 7  (abhi ki value $75.18)
-  Total lagaya $200.00 | wapas/value $142.72 | P&L $-57.28
+  Band trades: 15  (jeete 3, haare 12)
+  Khule trades: 6  (abhi ki value $65.87)
+  Total lagaya $210.00 | wapas/value $136.52 | P&L $-73.48
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
-  Band trades: 11  (jeete 4, haare 7)
-  Khule trades: 9  (abhi ki value $59.36)
-  Total lagaya $200.00 | wapas/value $130.66 | P&L $-69.34
+  Band trades: 13  (jeete 4, haare 9)
+  Khule trades: 8  (abhi ki value $50.07)
+  Total lagaya $210.00 | wapas/value $124.43 | P&L $-85.57
 
-Data: naye coins 642 | inme se kitne pahunche -> 10K:51 20K:33 30K:22 60K:20 100K:17
-      abhi dekh rahe coins 148 | DexScreener updates 46944 (errors 0) | galat uchhal ignore 85 | SOL $96.77
+Data: naye coins 726 | inme se kitne pahunche -> 10K:57 20K:39 30K:28 60K:26 100K:24
+      abhi dekh rahe coins 137 | DexScreener updates 55763 (errors 0) | galat uchhal ignore 105 | SOL $96.77
 ============================================================
