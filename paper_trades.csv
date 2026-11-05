@@ -201,3 +201,17 @@ time,strategy,mint,name,action,mc_usd,usd,note
 2026-11-05 10:46:39,S_snipe,EmmdewYLAS42S3aX6uwjefZkSdPfwg292XtSEV7Zpump,Chaco,SELL 50%,7203,10.52,2x - aadha
 2026-11-05 10:46:39,S_snipe,9d1pBbgghNwrB52QoUKD5rGtmym5dUtTpTTCECZQpump,7,BUY,2882,10.0,launch
 2026-11-05 10:47:01,S_snipe,62RUdD8KVcDCG8QkR56URTzGstkX9dgDFd7edx6Zpump,DWDWD,BUY,2728,10.0,launch
+2026-11-05 10:47:07,S_snipe,B7aQ8rfCQbQ2iguqf2RZBsJkxbma1CGa13y9mfDvpump,CR7,BUY,2710,10.0,launch
+2026-11-05 10:47:33,S_snipe,5iuiv72qEPEGZqv1mSPKL6nqzonNBxgcjk7Nftpmpump,BANDIT,SELL 50%,10770,19.46,2x - aadha
+2026-11-05 10:47:37,S_snipe,BaqhPKYaCrufJakaWqNMAq333gmDQ5gfLyfVZUoQpump,7,BUY,3261,10.0,launch
+2026-11-05 10:47:44,B_t60,J4m7utYHvwhQgzoVdaqbLSkFgHFGBFJXtj2VhpfSpump,QUIET,SELL 100%,28490,9.8,60 min mein 2x nahi hua
+2026-11-05 10:58:58,B_t60,HFrLVo3mpqHRxh3AkghwCMm3qBbi7Spro9rDEfHfpump,sten,SELL 100%,2738,1.68,60 min mein 2x nahi hua
+2026-11-05 10:59:54,B_sl40,35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump,LEVERAGED,SELL 100%,8944,5.57,2x se pehle entry se 40% gira
+2026-11-05 11:00:17,B_t60,Cz2YM1CaVm8FDbET2fZ33hLkhSrUyJJMtCgQxmbhpump,UMBRA,BUY,17210,10.0,base 12460
+2026-11-05 11:02:43,A_t60,3aZEEtcvdEggcbrtA9jxB83Mo4dsmcCRqRxvGdzLpump,MEOW,SELL 100%,39750,9.8,60 min mein 2x nahi hua
+2026-11-05 11:02:43,A_t60,4QhDC8vdstg8X25FabeRqnkhRr7oouvvwjJ2zLcQpump,rugger,SELL 100%,39750,9.8,60 min mein 2x nahi hua
+2026-11-05 11:04:48,B_t60,49gJ2cv63RkxFYQhQUi3g8QA7ffSULz9hGm5jsvwpump,DREAMR,SELL 100%,2756,1.36,60 min mein 2x nahi hua
+2026-11-05 11:06:18,A_t60,49gJ2cv63RkxFYQhQUi3g8QA7ffSULz9hGm5jsvwpump,DREAMR,SELL 100%,2754,0.83,60 min mein 2x nahi hua
+2026-11-05 11:09:07,A_base,Af62u9MBXbAEknD2VRR6pjF8FYdk1toXP6Hg9qAopump,Ronaldinu,BUY,31210,10.0,base 12670
+2026-11-05 11:09:07,A_sl40,Af62u9MBXbAEknD2VRR6pjF8FYdk1toXP6Hg9qAopump,Ronaldinu,BUY,31210,10.0,base 12670
+2026-11-05 11:09:07,A_t60,Af62u9MBXbAEknD2VRR6pjF8FYdk1toXP6Hg9qAopump,Ronaldinu,BUY,31210,10.0,base 12670
