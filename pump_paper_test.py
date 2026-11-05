@@ -282,9 +282,15 @@ async def dex_poller():
                 q = (p.get("quoteToken") or {}).get("address")
                 if q not in GOOD_QUOTES:          # ajeeb pair (jaise ZCASHERS wala) skip
                     continue
+                if not a or not a.endswith("pump"):
+                    continue
                 try:
                     mc = float(p.get("priceUsd") or 0) * TOTAL_SUPPLY   # har pair pe ek jaisa hisaab
+                    fdv = float(p.get("fdv") or 0)
                 except ValueError:
+                    continue
+                if fdv and not (fdv / 3 <= mc <= fdv * 3):   # price aur MC mel nahi khaate -> galat data
+                    stats["spikes_ignored"] = stats.get("spikes_ignored", 0) + 1
                     continue
                 liq = (p.get("liquidity") or {}).get("usd") or 0
                 if a and mc > 0 and (a not in best or liq > best[a][1]):
@@ -372,6 +378,9 @@ async def run_once(start, timers):
             if mint and "marketCapSol" in msg:
                 mc = float(msg["marketCapSol"]) * sol_price
                 if msg.get("txType") == "create":
+                    if not mint.endswith("pump"):      # asli pump.fun coin nahi (jaise TTWO share, PUMP token)
+                        stats["not_pump"] = stats.get("not_pump", 0) + 1
+                        continue
                     stats["seen"] += 1
                     coins[mint] = {"name": msg.get("symbol") or msg.get("name") or mint[:6],
                                    "born": now, "hist": [(now, mc)], "last_mc": mc, "max_mc": mc}
