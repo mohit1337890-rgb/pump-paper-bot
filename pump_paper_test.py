@@ -44,6 +44,7 @@ RISE_WINDOW  = 5 * 60      # seconds
 TAKE_HALF_AT = 2.0         # 2x pe aadha becho
 TRAIL_DROP   = 30          # peak se kitna % gire to sab becho
 PAPER_SIZE   = 10.0        # har trade $10 (nakli)
+START_CASH   = 100.0       # har strategy ka total wallet $100 - isse zyada kabhi nahi lagega
 FEE_PCT      = 1.0         # ~1% fee har buy/sell pe
 WATCH_MIN    = 60          # normal coin kitne minute tak dekhna
 DEX_WATCH_FROM = 12_000    # is MC ke upar gaye coins ko lamba dekho
@@ -112,6 +113,10 @@ def load_state():
         for sid in strat:
             if sid in s["strat"]:
                 strat[sid] = s["strat"][sid]
+                st = strat[sid]
+                if "cash" not in st:      # purane data se wallet ka hisaab banao
+                    allp = list(st["positions"].values()) + st["closed"]
+                    st["cash"] = START_CASH - PAPER_SIZE * len(allp) + sum(p["cash_back"] for p in allp)
         coins = s.get("coins", {})
         dex_watch = set(s.get("dex_watch", []))
         old = s.get("stats", {})
@@ -149,6 +154,10 @@ def check_entry(s, mint, c, now, mc):
     base = old[-1] if old else c["hist"][0][1]
     if base <= 0 or mc < base * (1 + s["rise"] / 100):
         return
+    if st.get("cash", START_CASH) < PAPER_SIZE:      # wallet khaali - trade skip
+        st["skipped"] = st.get("skipped", 0) + 1
+        return
+    st["cash"] = st.get("cash", START_CASH) - PAPER_SIZE
     share = PAPER_SIZE * (1 - FEE_PCT / 100) / mc
     st["positions"][mint] = {"mint": mint, "name": c["name"], "entry_mc": mc, "share": share,
                              "cash_back": 0.0, "half_sold": False, "peak": mc, "t": now}
@@ -161,6 +170,8 @@ def sell(sid, p, frac, mc, why):
     usd = amt * mc * (1 - FEE_PCT / 100)
     p["share"] -= amt
     p["cash_back"] += usd
+    st = strat[sid]
+    st["cash"] = st.get("cash", START_CASH) + usd
     say(f"{ts()} [{sid}] SELL {p['name'][:18]:18} {int(frac*100)}% @ MC ${mc:,.0f} -> ${usd:.2f} [{why}]")
     log_trade([ts(), sid, p["mint"], p["name"], f"SELL {int(frac*100)}%", round(mc), round(usd, 2), why])
 
@@ -279,7 +290,10 @@ def report():
         L.append(f"[{s['id']}]  entry ${s['mc_min']//1000}K-{s['mc_max']//1000}K | exit: {xname}")
         L.append(f"  Band trades: {len(st['closed'])}  (jeete {wins}, haare {len(st['closed'])-wins})")
         L.append(f"  Khule trades: {len(st['positions'])}  (abhi ki value ${oval:.2f})")
-        L.append(f"  Total lagaya ${tin:.2f} | wapas/value ${tback:.2f} | P&L ${tback-tin:+.2f}")
+        cash = st.get("cash", START_CASH)
+        L.append(f"  Wallet: cash ${cash:.2f} + khule trades ${oval - sum(p['cash_back'] for p in st['positions'].values()):.2f}"
+                 f" = ${cash + oval - sum(p['cash_back'] for p in st['positions'].values()):.2f}  (shuru ${START_CASH:.0f})"
+                 f" | paise khatam hone se skip: {st.get('skipped', 0)}")
         L.append("")
     r = stats["reached"]
     L.append(f"Data: naye coins {stats['seen']} | inme se kitne pahunche -> "
