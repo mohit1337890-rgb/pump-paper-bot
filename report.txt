@@ -1,5 +1,5 @@
 ============================================================
-REPORT  2026-11-05 16:19:14 UTC
+REPORT  2026-11-05 16:23:52 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
@@ -13,29 +13,29 @@ REPORT  2026-11-05 16:19:14 UTC
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 39  (jeete 14, haare 25)
-  Khule trades: 2  (abhi ki value $10.14)
-  Wallet: cash $0.39 + khule trades $10.14 = $10.54  (shuru $100) | paise khatam hone se skip: 309
+  Khule trades: 2  (abhi ki value $10.25)
+  Wallet: cash $0.39 + khule trades $10.25 = $10.64  (shuru $100) | paise khatam hone se skip: 309
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
   Khule trades: 18  (abhi ki value $77.54)
-  Wallet: cash $-68.55 + khule trades $77.54 = $8.99  (shuru $100) | paise khatam hone se skip: 1100
+  Wallet: cash $-68.55 + khule trades $77.54 = $8.99  (shuru $100) | paise khatam hone se skip: 1104
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 16  (jeete 3, haare 13)
   Khule trades: 5  (abhi ki value $59.16)
-  Wallet: cash $-33.78 + khule trades $59.16 = $25.38  (shuru $100) | paise khatam hone se skip: 1100
+  Wallet: cash $-33.78 + khule trades $59.16 = $25.38  (shuru $100) | paise khatam hone se skip: 1104
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 25  (jeete 6, haare 19)
   Khule trades: 1  (abhi ki value $22.67)
-  Wallet: cash $9.88 + khule trades $11.39 = $21.27  (shuru $100) | paise khatam hone se skip: 979
+  Wallet: cash $9.88 + khule trades $11.39 = $21.27  (shuru $100) | paise khatam hone se skip: 983
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.83)
-  Wallet: cash $9.99 + khule trades $88.85 = $98.83  (shuru $100) | paise khatam hone se skip: 1439
+  Wallet: cash $9.99 + khule trades $88.85 = $98.83  (shuru $100) | paise khatam hone se skip: 1453
 
-Data: naye coins 2323 | inme se kitne pahunche -> 10K:226 20K:129 30K:102 60K:78 100K:69
-      abhi dekh rahe coins 215 | DexScreener updates 360166 (errors 0) | galat uchhal ignore 339 | SOL $89.91
+Data: naye coins 2337 | inme se kitne pahunche -> 10K:226 20K:129 30K:102 60K:78 100K:69
+      abhi dekh rahe coins 217 | DexScreener updates 364869 (errors 0) | galat uchhal ignore 342 | SOL $90.96
 ============================================================
