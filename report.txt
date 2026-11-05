@@ -1,36 +1,36 @@
 ============================================================
-REPORT  2026-11-05 08:33:13 UTC
+REPORT  2026-11-05 09:03:20 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 0  (jeete 0, haare 0)
-  Khule trades: 3  (abhi ki value $16.80)
-  Total lagaya $30.00 | wapas/value $16.80 | P&L $-13.20
+  Khule trades: 3  (abhi ki value $26.85)
+  Total lagaya $30.00 | wapas/value $26.85 | P&L $-3.15
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
   Band trades: 2  (jeete 0, haare 2)
-  Khule trades: 1  (abhi ki value $16.05)
-  Total lagaya $30.00 | wapas/value $16.80 | P&L $-13.20
+  Khule trades: 1  (abhi ki value $26.11)
+  Total lagaya $30.00 | wapas/value $26.85 | P&L $-3.15
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 0  (jeete 0, haare 0)
-  Khule trades: 3  (abhi ki value $16.80)
-  Total lagaya $30.00 | wapas/value $16.80 | P&L $-13.20
+  Khule trades: 3  (abhi ki value $26.85)
+  Total lagaya $30.00 | wapas/value $26.85 | P&L $-3.15
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 0  (jeete 0, haare 0)
-  Khule trades: 5  (abhi ki value $14.68)
-  Total lagaya $50.00 | wapas/value $14.68 | P&L $-35.32
+  Khule trades: 9  (abhi ki value $41.41)
+  Total lagaya $90.00 | wapas/value $41.41 | P&L $-48.59
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
-  Band trades: 4  (jeete 0, haare 4)
-  Khule trades: 1  (abhi ki value $8.48)
-  Total lagaya $50.00 | wapas/value $19.01 | P&L $-30.99
+  Band trades: 6  (jeete 0, haare 6)
+  Khule trades: 3  (abhi ki value $31.36)
+  Total lagaya $90.00 | wapas/value $48.86 | P&L $-41.14
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 0  (jeete 0, haare 0)
-  Khule trades: 5  (abhi ki value $14.68)
-  Total lagaya $50.00 | wapas/value $14.68 | P&L $-35.32
+  Khule trades: 9  (abhi ki value $41.41)
+  Total lagaya $90.00 | wapas/value $41.41 | P&L $-48.59
 
-Data: naye coins 190 | inme se kitne pahunche -> 10K:11 20K:6 30K:3 60K:5 100K:4
-      abhi dekh rahe coins 87 | DexScreener updates 8456 (errors 0) | galat uchhal ignore 14 | SOL $96.58
+Data: naye coins 332 | inme se kitne pahunche -> 10K:25 20K:12 30K:6 60K:9 100K:9
+      abhi dekh rahe coins 87 | DexScreener updates 20260 (errors 0) | galat uchhal ignore 34 | SOL $96.58
 ============================================================
