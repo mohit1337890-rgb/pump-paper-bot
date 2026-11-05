@@ -32,6 +32,10 @@ for _eid, _emin, _emax in [("A", 30_000, 60_000), ("B", 15_000, 35_000)]:
     for _x in ["base", "sl40", "t60"]:
         STRATEGIES.append({"id": f"{_eid}_{_x}", "mc_min": _emin, "mc_max": _emax,
                            "rise": 30, "exit": _x})
+# S_snipe: naya coin bante hi launch price pe kharido, 2x pe aadha, 5x pe baaki (Mohit ka rule)
+STRATEGIES.append({"id": "S_snipe", "mc_min": 0, "mc_max": 0, "rise": 0, "exit": "snipe"})
+SNIPE_HALF_AT = 2.0
+SNIPE_ALL_AT  = 5.0
 SL_PCT       = 40          # sl40: entry se kitna % gire
 TIME_EXIT    = 60 * 60     # t60: kitne sec mein 2x na ho to becho
 SPIKE_X      = 3.0         # data filter: 3x se bada achanak uchhal ...
@@ -144,7 +148,22 @@ def in_any_position(mint):
     return any(mint in v["positions"] for v in strat.values())
 
 
+def snipe_entry(mint, c, now, mc):
+    st = strat["S_snipe"]
+    if st.get("cash", START_CASH) < PAPER_SIZE:
+        st["skipped"] = st.get("skipped", 0) + 1
+        return
+    st["cash"] = st.get("cash", START_CASH) - PAPER_SIZE
+    share = PAPER_SIZE * (1 - FEE_PCT / 100) / mc
+    st["positions"][mint] = {"mint": mint, "name": c["name"], "entry_mc": mc, "share": share,
+                             "cash_back": 0.0, "half_sold": False, "peak": mc, "t": now}
+    say(f"{ts()} [S_snipe] BUY  {c['name'][:18]:18} launch MC ${mc:,.0f}")
+    log_trade([ts(), "S_snipe", mint, c["name"], "BUY", round(mc), PAPER_SIZE, "launch"])
+
+
 def check_entry(s, mint, c, now, mc):
+    if s["exit"] == "snipe":
+        return
     st = strat[s["id"]]
     if mint in st["positions"] or any(p["mint"] == mint for p in st["closed"]):
         return
@@ -183,6 +202,14 @@ def check_exit(s, mint, mc, now):
     if not p:
         return
     p["peak"] = max(p["peak"], mc)
+    if s["exit"] == "snipe":
+        if not p["half_sold"] and mc >= p["entry_mc"] * SNIPE_HALF_AT:
+            sell(sid, p, 0.5, mc, "2x - aadha")
+            p["half_sold"] = True
+        if p["half_sold"] and mc >= p["entry_mc"] * SNIPE_ALL_AT:
+            sell(sid, p, 1.0, mc, "5x - baaki sab")
+            st["closed"].append(st["positions"].pop(mint))
+        return
     if not p["half_sold"] and s["exit"] == "sl40" and mc <= p["entry_mc"] * (1 - SL_PCT / 100):
         sell(sid, p, 1.0, mc, f"2x se pehle entry se {SL_PCT}% gira")
         st["closed"].append(st["positions"].pop(mint))
@@ -285,6 +312,17 @@ def report():
             oval += v
             tin += PAPER_SIZE
             tback += v
+        if s["exit"] == "snipe":
+            L.append("[S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)")
+            L.append(f"  Band trades: {len(st['closed'])}  | 2x pe aadha bika (abhi khule): "
+                     f"{sum(p['half_sold'] for p in st['positions'].values())}")
+            L.append(f"  Khule trades: {len(st['positions'])}  (abhi ki value ${oval:.2f})")
+            cash = st.get("cash", START_CASH)
+            ov = oval - sum(p['cash_back'] for p in st['positions'].values())
+            L.append(f"  Wallet: cash ${cash:.2f} + khule trades ${ov:.2f} = ${cash + ov:.2f}  "
+                     f"(shuru ${START_CASH:.0f}) | paise khatam hone se skip: {st.get('skipped', 0)}")
+            L.append("")
+            continue
         xname = {"base": "sirf Mohit ke rules", "sl40": f"+ 2x se pehle -{SL_PCT}% pe becho",
                  "t60": f"+ {TIME_EXIT//60} min mein 2x nahi to becho"}[s["exit"]]
         L.append(f"[{s['id']}]  entry ${s['mc_min']//1000}K-{s['mc_max']//1000}K | exit: {xname}")
@@ -337,6 +375,7 @@ async def run_once(start, timers):
                     stats["seen"] += 1
                     coins[mint] = {"name": msg.get("symbol") or msg.get("name") or mint[:6],
                                    "born": now, "hist": [(now, mc)], "last_mc": mc, "max_mc": mc}
+                    snipe_entry(mint, coins[mint], now, mc)
                 elif mint in coins:
                     stats["trade_msgs"] += 1
                     update(mint, mc, now)
