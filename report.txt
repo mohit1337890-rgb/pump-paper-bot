@@ -1,16 +1,16 @@
 ============================================================
-REPORT  2026-11-05 06:50:22 UTC
+REPORT  2026-11-05 07:20:34 UTC
 
 [A_mohit]  entry MC $30K-60K, 5 min mein 30%+ tezi
-  Band trades: 85  (jeete 85, haare 0)
-  Khule trades: 153  (abhi ki value $734.25)
-  Total lagaya $2380.00 | wapas/value $50777.72 | P&L $+48397.72
+  Band trades: 87  (jeete 87, haare 0)
+  Khule trades: 156  (abhi ki value $738.59)
+  Total lagaya $2430.00 | wapas/value $50817.62 | P&L $+48387.62
 
 [B_jaldi]  entry MC $15K-35K, 5 min mein 30%+ tezi
-  Band trades: 81  (jeete 81, haare 0)
-  Khule trades: 259  (abhi ki value $1143.51)
-  Total lagaya $3400.00 | wapas/value $51199.19 | P&L $+47799.19
+  Band trades: 83  (jeete 83, haare 0)
+  Khule trades: 261  (abhi ki value $1150.63)
+  Total lagaya $3440.00 | wapas/value $51238.67 | P&L $+47798.67
 
-Data: naye coins 16827 | inme se kitne pahunche -> 10K:973 20K:650 30K:545 60K:429 100K:388
-      abhi dekh rahe coins 478 | DexScreener updates 2057302 (errors 0) | SOL $95.94
+Data: naye coins 16974 | inme se kitne pahunche -> 10K:981 20K:654 30K:549 60K:432 100K:391
+      abhi dekh rahe coins 487 | DexScreener updates 2112982 (errors 0) | SOL $96.14
 ============================================================
