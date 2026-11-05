@@ -1,36 +1,36 @@
 ============================================================
-REPORT  2026-11-05 10:18:49 UTC
+REPORT  2026-11-05 10:30:16 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
-  Band trades: 1  (jeete 1, haare 0)
-  Khule trades: 13  (abhi ki value $107.81)
-  Total lagaya $140.00 | wapas/value $130.87 | P&L $-9.13
+  Band trades: 2  (jeete 2, haare 0)
+  Khule trades: 13  (abhi ki value $111.11)
+  Wallet: cash $5.41 + khule trades $96.64 = $102.05  (shuru $100) | paise khatam hone se skip: 0
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
-  Band trades: 9  (jeete 1, haare 8)
-  Khule trades: 5  (abhi ki value $103.74)
-  Total lagaya $140.00 | wapas/value $137.86 | P&L $-2.14
+  Band trades: 11  (jeete 2, haare 9)
+  Khule trades: 4  (abhi ki value $106.62)
+  Wallet: cash $16.96 + khule trades $92.15 = $109.11  (shuru $100) | paise khatam hone se skip: 0
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
-  Band trades: 4  (jeete 1, haare 3)
-  Khule trades: 10  (abhi ki value $106.08)
-  Total lagaya $140.00 | wapas/value $130.87 | P&L $-9.13
+  Band trades: 6  (jeete 3, haare 3)
+  Khule trades: 9  (abhi ki value $97.26)
+  Wallet: cash $19.16 + khule trades $82.78 = $101.95  (shuru $100) | paise khatam hone se skip: 0
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
-  Khule trades: 18  (abhi ki value $83.35)
-  Total lagaya $210.00 | wapas/value $124.80 | P&L $-85.20
+  Khule trades: 18  (abhi ki value $83.99)
+  Wallet: cash $-68.55 + khule trades $83.99 = $15.44  (shuru $100) | paise khatam hone se skip: 0
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 15  (jeete 3, haare 12)
-  Khule trades: 6  (abhi ki value $65.87)
-  Total lagaya $210.00 | wapas/value $136.52 | P&L $-73.48
+  Khule trades: 6  (abhi ki value $66.69)
+  Wallet: cash $-39.35 + khule trades $66.69 = $27.33  (shuru $100) | paise khatam hone se skip: 0
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
-  Band trades: 13  (jeete 4, haare 9)
-  Khule trades: 8  (abhi ki value $50.07)
-  Total lagaya $210.00 | wapas/value $124.43 | P&L $-85.57
+  Band trades: 17  (jeete 5, haare 12)
+  Khule trades: 4  (abhi ki value $14.70)
+  Wallet: cash $0.13 + khule trades $14.70 = $14.82  (shuru $100) | paise khatam hone se skip: 0
 
-Data: naye coins 726 | inme se kitne pahunche -> 10K:57 20K:39 30K:28 60K:26 100K:24
-      abhi dekh rahe coins 137 | DexScreener updates 55763 (errors 0) | galat uchhal ignore 105 | SOL $96.77
+Data: naye coins 799 | inme se kitne pahunche -> 10K:60 20K:41 30K:30 60K:27 100K:25
+      abhi dekh rahe coins 160 | DexScreener updates 61152 (errors 0) | galat uchhal ignore 0 | SOL $96.80
 ============================================================

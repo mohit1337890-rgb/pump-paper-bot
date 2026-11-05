@@ -175,3 +175,7 @@ time,strategy,mint,name,action,mc_usd,usd,note
 2026-11-05 10:22:37,A_t60,2CG7SCxXcZgkKoqmzGDPtMCwAfQooaUzNhfG7DVDpump,Mei,SELL 100%,39660,12.02,60 min mein 2x nahi hua
 2026-11-05 10:24:33,B_t60,DUErNKfRrXVK332nj8iW1YTn4zYhE58sa2fvi26jpump,BNW,SELL 100%,29160,9.8,60 min mein 2x nahi hua
 2026-11-05 10:24:58,A_sl40,CmuCU2UDGVtNBdq3jbsfEAfJBVFXDg8geFTdNgh3pump,PMAX,SELL 100%,2058,0.49,2x se pehle entry se 40% gira
+2026-11-05 10:29:37,A_base,EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump,TREMPS,SELL 100%,80980,7.38,"peak $125,200 se 30% gira"
+2026-11-05 10:29:37,A_sl40,EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump,TREMPS,SELL 100%,80980,7.38,"peak $125,200 se 30% gira"
+2026-11-05 10:29:37,A_t60,EdD77xt9FZjj815Kdrygc2jDugYRsJfyPeUAc4Fdpump,TREMPS,SELL 100%,80980,7.38,"peak $125,200 se 30% gira"
+2026-11-05 10:30:01,B_t60,35TVjidU7ePGMWLM1r2UwEXXWCWH77kFyFndJ57xpump,LEVERAGED,SELL 100%,12010,7.48,60 min mein 2x nahi hua
