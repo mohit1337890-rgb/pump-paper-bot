@@ -1,51 +1,51 @@
 ============================================================
-REPORT  2026-11-06 00:12:55 UTC
+REPORT  2026-11-06 00:43:36 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
-  Khule trades: 17  (abhi ki value $61.65)
-  Wallet: cash $3.37 + khule trades $61.65 = $65.02  (shuru $100) | paise khatam hone se skip: 2049
+  Khule trades: 17  (abhi ki value $61.66)
+  Wallet: cash $3.37 + khule trades $61.66 = $65.03  (shuru $100) | paise khatam hone se skip: 2089
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
   Band trades: 21  (jeete 7, haare 14)
   Khule trades: 5  (abhi ki value $55.93)
-  Wallet: cash $5.46 + khule trades $55.93 = $61.39  (shuru $100) | paise khatam hone se skip: 2024
+  Wallet: cash $5.46 + khule trades $55.93 = $61.39  (shuru $100) | paise khatam hone se skip: 2064
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 42  (jeete 15, haare 27)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 1686
+  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 1726
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
   Khule trades: 18  (abhi ki value $76.66)
-  Wallet: cash $-68.55 + khule trades $76.66 = $8.11  (shuru $100) | paise khatam hone se skip: 3143
+  Wallet: cash $-68.55 + khule trades $76.66 = $8.11  (shuru $100) | paise khatam hone se skip: 3289
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 16  (jeete 3, haare 13)
   Khule trades: 5  (abhi ki value $59.16)
-  Wallet: cash $-33.78 + khule trades $59.16 = $25.38  (shuru $100) | paise khatam hone se skip: 3143
+  Wallet: cash $-33.78 + khule trades $59.16 = $25.38  (shuru $100) | paise khatam hone se skip: 3289
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 25  (jeete 6, haare 19)
   Khule trades: 1  (abhi ki value $22.67)
-  Wallet: cash $9.88 + khule trades $11.39 = $21.27  (shuru $100) | paise khatam hone se skip: 3022
+  Wallet: cash $9.88 + khule trades $11.39 = $21.27  (shuru $100) | paise khatam hone se skip: 3168
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 4261
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 4399
 
-[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 238) | exit: TP +15% / SL -7%
-  Band trades: 14  (jeete 8, haare 6)
+[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 254) | exit: TP +15% / SL -7%
+  Band trades: 15  (jeete 8, haare 7)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $93.38 + khule trades $0.00 = $93.38  (shuru $100) | paise khatam hone se skip: 0
+  Wallet: cash $92.04 + khule trades $0.00 = $92.04  (shuru $100) | paise khatam hone se skip: 0
 
-[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 238) | exit: sirf Mohit ke rules
+[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 254) | exit: sirf Mohit ke rules
   Band trades: 5  (jeete 5, haare 0)
-  Khule trades: 9  (abhi ki value $7.46)
-  Wallet: cash $43.03 + khule trades $7.46 = $50.49  (shuru $100) | paise khatam hone se skip: 0
+  Khule trades: 10  (abhi ki value $6.13)
+  Wallet: cash $33.03 + khule trades $6.13 = $39.17  (shuru $100) | paise khatam hone se skip: 0
 
-Data: naye coins 5145 | inme se kitne pahunche -> 10K:524 20K:257 30K:197 60K:142 100K:106
-      abhi dekh rahe coins 230 | DexScreener updates 936570 (errors 0) | galat uchhal ignore 292 | SOL $89.60
+Data: naye coins 5283 | inme se kitne pahunche -> 10K:535 20K:265 30K:204 60K:147 100K:110
+      abhi dekh rahe coins 220 | DexScreener updates 969409 (errors 0) | galat uchhal ignore 337 | SOL $90.20
 ============================================================

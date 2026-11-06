@@ -375,3 +375,6 @@ time,strategy,mint,name,action,mc_usd,usd,note
 2026-11-06 00:06:02,F_guide,32qBmtuHiL7PRdHkaY8Jtakr2HkPj1HSjfsdUR8bpump,dumpocrats,BUY,30680,10.0,base 2661
 2026-11-06 00:06:02,F_mohit,32qBmtuHiL7PRdHkaY8Jtakr2HkPj1HSjfsdUR8bpump,dumpocrats,BUY,30680,10.0,base 2661
 2026-11-06 00:06:14,F_guide,32qBmtuHiL7PRdHkaY8Jtakr2HkPj1HSjfsdUR8bpump,dumpocrats,SELL 100%,48720,15.56,TP +15%
+2026-11-06 00:14:51,F_guide,Bz23Ronsq6z3PZTA9rDi7r17etcuuxNk5YtS6sb3pump,GHOST,BUY,44400,10.0,base 2552
+2026-11-06 00:14:51,F_mohit,Bz23Ronsq6z3PZTA9rDi7r17etcuuxNk5YtS6sb3pump,GHOST,BUY,44400,10.0,base 2552
+2026-11-06 00:16:44,F_guide,Bz23Ronsq6z3PZTA9rDi7r17etcuuxNk5YtS6sb3pump,GHOST,SELL 100%,39260,8.67,SL -7%
