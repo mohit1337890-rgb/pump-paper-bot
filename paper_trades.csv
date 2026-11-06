@@ -389,3 +389,11 @@ time,strategy,mint,name,action,mc_usd,usd,note
 2026-11-06 01:13:56,F_guide,3Eu8kC4DTLbUsZ36nuz4cUPtZgRNfpwaGwT5wXirpump,ChillVrax,BUY,30820,10.0,base 2530
 2026-11-06 01:13:56,F_mohit,3Eu8kC4DTLbUsZ36nuz4cUPtZgRNfpwaGwT5wXirpump,ChillVrax,BUY,30820,10.0,base 2530
 2026-11-06 01:14:09,F_guide,3Eu8kC4DTLbUsZ36nuz4cUPtZgRNfpwaGwT5wXirpump,ChillVrax,SELL 100%,27230,8.66,SL -7%
+2026-11-06 02:27:29,F_guide,5h7cncScZtgJAhKL9hXx6Dv4wDNg8ChbmFYRj4cgpump,dikdik,BUY,58610,10.0,base 2683
+2026-11-06 02:27:29,F_mohit,5h7cncScZtgJAhKL9hXx6Dv4wDNg8ChbmFYRj4cgpump,dikdik,BUY,58610,10.0,base 2683
+2026-11-06 02:28:16,F_guide,5h7cncScZtgJAhKL9hXx6Dv4wDNg8ChbmFYRj4cgpump,dikdik,SELL 100%,45380,7.59,SL -7%
+2026-11-06 02:36:35,F_guide,HozkykzLux4y8BW26yTZNgqrmEBgN7tq2wjPp45dpump,Greg,BUY,36930,10.0,base 5880
+2026-11-06 02:36:35,F_mohit,HozkykzLux4y8BW26yTZNgqrmEBgN7tq2wjPp45dpump,Greg,BUY,36930,10.0,base 5880
+2026-11-06 02:37:11,F_guide,HozkykzLux4y8BW26yTZNgqrmEBgN7tq2wjPp45dpump,Greg,SELL 100%,33070,8.78,SL -7%
+2026-11-06 02:53:38,F_guide,GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump,LUNOX,BUY,31310,10.0,base 15128
+2026-11-06 02:54:25,F_guide,GTTQWTy96Vr2NNqrUHjg854AYKKP51jQr2Fcies7pump,LUNOX,SELL 100%,40150,12.57,TP +15%

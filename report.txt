@@ -1,51 +1,51 @@
 ============================================================
-REPORT  2026-11-06 02:25:36 UTC
+REPORT  2026-11-06 02:55:38 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
   Khule trades: 17  (abhi ki value $61.65)
-  Wallet: cash $3.37 + khule trades $61.65 = $65.02  (shuru $100) | paise khatam hone se skip: 2148
+  Wallet: cash $3.37 + khule trades $61.65 = $65.02  (shuru $100) | paise khatam hone se skip: 2223
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
   Band trades: 21  (jeete 7, haare 14)
   Khule trades: 5  (abhi ki value $55.93)
-  Wallet: cash $5.46 + khule trades $55.93 = $61.39  (shuru $100) | paise khatam hone se skip: 2123
+  Wallet: cash $5.46 + khule trades $55.93 = $61.39  (shuru $100) | paise khatam hone se skip: 2198
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 42  (jeete 15, haare 27)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 1785
+  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 1860
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
   Khule trades: 18  (abhi ki value $76.67)
-  Wallet: cash $-68.55 + khule trades $76.67 = $8.12  (shuru $100) | paise khatam hone se skip: 3381
+  Wallet: cash $-68.55 + khule trades $76.67 = $8.12  (shuru $100) | paise khatam hone se skip: 3429
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 16  (jeete 3, haare 13)
   Khule trades: 5  (abhi ki value $59.16)
-  Wallet: cash $-33.78 + khule trades $59.16 = $25.38  (shuru $100) | paise khatam hone se skip: 3381
+  Wallet: cash $-33.78 + khule trades $59.16 = $25.38  (shuru $100) | paise khatam hone se skip: 3429
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 25  (jeete 6, haare 19)
   Khule trades: 1  (abhi ki value $22.67)
-  Wallet: cash $9.88 + khule trades $11.39 = $21.27  (shuru $100) | paise khatam hone se skip: 3260
+  Wallet: cash $9.88 + khule trades $11.39 = $21.27  (shuru $100) | paise khatam hone se skip: 3308
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 4753
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 4866
 
-[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 255) | exit: TP +15% / SL -7%
-  Band trades: 18  (jeete 9, haare 9)
+[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 279) | exit: TP +15% / SL -7%
+  Band trades: 21  (jeete 10, haare 11)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $91.69 + khule trades $0.00 = $91.69  (shuru $100) | paise khatam hone se skip: 0
+  Wallet: cash $90.62 + khule trades $0.00 = $90.62  (shuru $100) | paise khatam hone se skip: 0
 
-[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 255) | exit: sirf Mohit ke rules
+[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 279) | exit: sirf Mohit ke rules
   Band trades: 6  (jeete 6, haare 0)
-  Khule trades: 12  (abhi ki value $6.89)
-  Wallet: cash $24.71 + khule trades $6.89 = $31.60  (shuru $100) | paise khatam hone se skip: 0
+  Khule trades: 14  (abhi ki value $8.34)
+  Wallet: cash $4.71 + khule trades $8.34 = $13.05  (shuru $100) | paise khatam hone se skip: 11
 
-Data: naye coins 5637 | inme se kitne pahunche -> 10K:557 20K:276 30K:212 60K:154 100K:117
-      abhi dekh rahe coins 146 | DexScreener updates 1066282 (errors 0) | galat uchhal ignore 6 | SOL $89.95
+Data: naye coins 5750 | inme se kitne pahunche -> 10K:564 20K:283 30K:218 60K:155 100K:117
+      abhi dekh rahe coins 176 | DexScreener updates 1090232 (errors 0) | galat uchhal ignore 28 | SOL $90.25
 ============================================================
