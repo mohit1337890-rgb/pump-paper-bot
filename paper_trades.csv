@@ -462,3 +462,6 @@ time,strategy,mint,name,action,mc_usd,usd,note
 2026-11-06 10:45:53,F_guide,7avdHbPjBLbauZ2tMBXVhJhfHUpKHuqXU3be1vdtpump,Boberduck,SELL 100%,47420,14.31,TP +15%
 2026-11-06 11:04:38,F_guide,rAxD9RpFienq6zfq8yZSakZXjewZqTXD9jRd2UEpump,ATM,BUY,30060,10.0,base 22060
 2026-11-06 11:06:18,F_guide,rAxD9RpFienq6zfq8yZSakZXjewZqTXD9jRd2UEpump,ATM,SELL 100%,27700,9.03,SL -7%
+2026-11-06 11:10:15,A_sl40,Af62u9MBXbAEknD2VRR6pjF8FYdk1toXP6Hg9qAopump,Ronaldinu,SELL 100%,2343,0.74,2x se pehle entry se 40% gira
+2026-11-06 11:13:11,F_guide,4PUDrs1H1eTErxyD7mBFEWftMg9KAACguV3exe3mpump,CHILLAKIN,BUY,31470,10.0,base 2521
+2026-11-06 11:13:36,F_guide,4PUDrs1H1eTErxyD7mBFEWftMg9KAACguV3exe3mpump,CHILLAKIN,SELL 100%,44650,13.91,TP +15%
