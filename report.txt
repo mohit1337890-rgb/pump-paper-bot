@@ -1,51 +1,51 @@
 ============================================================
-REPORT  2026-11-06 20:01:45 UTC
+REPORT  2026-11-06 20:31:57 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
   Khule trades: 17  (abhi ki value $8.47)
-  Wallet: cash $3.37 + khule trades $8.47 = $11.84  (shuru $100) | paise khatam hone se skip: 4311
+  Wallet: cash $3.37 + khule trades $8.47 = $11.84  (shuru $100) | paise khatam hone se skip: 4420
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
   Band trades: 26  (jeete 7, haare 19)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $8.30 + khule trades $0.00 = $8.30  (shuru $100) | paise khatam hone se skip: 4286
+  Wallet: cash $8.30 + khule trades $0.00 = $8.30  (shuru $100) | paise khatam hone se skip: 4395
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 42  (jeete 15, haare 27)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 3948
+  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 4057
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
   Khule trades: 18  (abhi ki value $58.75)
-  Wallet: cash $-68.55 + khule trades $58.75 = $-9.80  (shuru $100) | paise khatam hone se skip: 6862
+  Wallet: cash $-68.55 + khule trades $58.75 = $-9.80  (shuru $100) | paise khatam hone se skip: 6960
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 17  (jeete 3, haare 14)
   Khule trades: 4  (abhi ki value $40.50)
-  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 6862
+  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 6960
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 30  (jeete 9, haare 21)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 6671
+  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 6769
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 10140
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 10316
 
-[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 1043) | exit: TP +15% / SL -7%
-  Band trades: 97  (jeete 49, haare 48)
+[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 1093) | exit: TP +15% / SL -7%
+  Band trades: 99  (jeete 50, haare 49)
   Khule trades: 6  (abhi ki value $60.43)
-  Wallet: cash $12.42 + khule trades $60.43 = $72.85  (shuru $100) | paise khatam hone se skip: 0
+  Wallet: cash $14.17 + khule trades $60.43 = $74.60  (shuru $100) | paise khatam hone se skip: 0
 
-[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 1669) | exit: sirf Mohit ke rules
+[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 1740) | exit: sirf Mohit ke rules
   Band trades: 6  (jeete 6, haare 0)
-  Khule trades: 14  (abhi ki value $8.18)
-  Wallet: cash $4.71 + khule trades $8.18 = $12.89  (shuru $100) | paise khatam hone se skip: 732
+  Khule trades: 14  (abhi ki value $8.10)
+  Wallet: cash $4.71 + khule trades $8.10 = $12.82  (shuru $100) | paise khatam hone se skip: 770
 
-Data: naye coins 11024 | inme se kitne pahunche -> 10K:1034 20K:529 30K:412 60K:293 100K:224
-      abhi dekh rahe coins 289 | DexScreener updates 2117962 (errors 3) | galat uchhal ignore 52 | SOL $89.85
+Data: naye coins 11200 | inme se kitne pahunche -> 10K:1054 20K:538 30K:420 60K:297 100K:226
+      abhi dekh rahe coins 259 | DexScreener updates 2150861 (errors 3) | galat uchhal ignore 83 | SOL $89.76
 ============================================================
