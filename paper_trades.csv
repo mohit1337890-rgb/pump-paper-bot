@@ -440,3 +440,13 @@ time,strategy,mint,name,action,mc_usd,usd,note
 2026-11-06 09:34:11,F_guide,3dWe37sqSgR8z4ToBCb6ArUyhgVLLTnYyVU3uqd9pump,BDHM,BUY,59100,10.0,base 2537
 2026-11-06 09:34:36,F_guide,3dWe37sqSgR8z4ToBCb6ArUyhgVLLTnYyVU3uqd9pump,BDHM,SELL 100%,69130,11.46,TP +15%
 2026-11-06 09:37:18,F_guide,BgD9xH9vwjBGWJUAiWdYzJq7hjJqiXeh8QvX4Trkpump,POLSKA,BUY,47730,10.0,base 2533
+2026-11-06 09:43:03,F_guide,68oxwKtEz1kRDy49vjQvdRrZ1osoSsbqg7JXpPbGpump,Kuro,BUY,37070,10.0,base 2530
+2026-11-06 09:43:52,F_guide,68oxwKtEz1kRDy49vjQvdRrZ1osoSsbqg7JXpPbGpump,Kuro,SELL 100%,45390,12.0,TP +15%
+2026-11-06 09:51:42,F_guide,HLXswYwgdCB8w8MVayL6BW9QqZ965Hm3ztVtk8Vepump,$GTP,BUY,41430,10.0,base 2528
+2026-11-06 09:52:19,F_guide,HLXswYwgdCB8w8MVayL6BW9QqZ965Hm3ztVtk8Vepump,$GTP,SELL 100%,97430,23.05,TP +15%
+2026-11-06 10:00:01,F_guide,GbdLBkrNRbCAuaASquvmJw6kNH82aJsotbdjAgcrpump,wanker,BUY,53730,10.0,base 36967
+2026-11-06 10:01:26,F_guide,GbdLBkrNRbCAuaASquvmJw6kNH82aJsotbdjAgcrpump,wanker,SELL 100%,63260,11.54,TP +15%
+2026-11-06 10:02:00,A_sl40,3aZEEtcvdEggcbrtA9jxB83Mo4dsmcCRqRxvGdzLpump,MEOW,SELL 100%,1801,0.44,2x se pehle entry se 40% gira
+2026-11-06 10:02:00,A_sl40,4QhDC8vdstg8X25FabeRqnkhRr7oouvvwjJ2zLcQpump,rugger,SELL 100%,1515,0.37,2x se pehle entry se 40% gira
+2026-11-06 10:02:13,F_guide,FNp2Hit1bpYfskkW2CaWbW9tTVis4wb3qMjEZ8E4pump,UK,BUY,31240,10.0,base 23150
+2026-11-06 10:05:41,F_guide,FNp2Hit1bpYfskkW2CaWbW9tTVis4wb3qMjEZ8E4pump,UK,SELL 100%,28090,8.81,SL -7%
