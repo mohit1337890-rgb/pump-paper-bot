@@ -1,51 +1,51 @@
 ============================================================
-REPORT  2026-11-07 21:52:45 UTC
+REPORT  2026-11-07 22:22:48 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
   Khule trades: 17  (abhi ki value $8.16)
-  Wallet: cash $3.37 + khule trades $8.16 = $11.53  (shuru $100) | paise khatam hone se skip: 7782
+  Wallet: cash $3.37 + khule trades $8.16 = $11.53  (shuru $100) | paise khatam hone se skip: 7845
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
   Band trades: 26  (jeete 7, haare 19)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $8.30 + khule trades $0.00 = $8.30  (shuru $100) | paise khatam hone se skip: 7757
+  Wallet: cash $8.30 + khule trades $0.00 = $8.30  (shuru $100) | paise khatam hone se skip: 7820
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 42  (jeete 15, haare 27)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 7419
+  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 7482
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
   Khule trades: 18  (abhi ki value $58.58)
-  Wallet: cash $-68.55 + khule trades $58.58 = $-9.97  (shuru $100) | paise khatam hone se skip: 12106
+  Wallet: cash $-68.55 + khule trades $58.58 = $-9.97  (shuru $100) | paise khatam hone se skip: 12157
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 17  (jeete 3, haare 14)
   Khule trades: 4  (abhi ki value $40.50)
-  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 12106
+  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 12157
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 30  (jeete 9, haare 21)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 11915
+  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 11966
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 17821
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 17973
 
-[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 3325) | exit: TP +15% / SL -7%
+[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 3369) | exit: TP +15% / SL -7%
   Band trades: 107  (jeete 51, haare 56)
   Khule trades: 2  (abhi ki value $19.76)
-  Wallet: cash $4.64 + khule trades $19.76 = $24.40  (shuru $100) | paise khatam hone se skip: 1061
+  Wallet: cash $4.64 + khule trades $19.76 = $24.40  (shuru $100) | paise khatam hone se skip: 1080
 
-[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 4008) | exit: sirf Mohit ke rules
+[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 4052) | exit: sirf Mohit ke rules
   Band trades: 6  (jeete 6, haare 0)
-  Khule trades: 14  (abhi ki value $7.61)
-  Wallet: cash $4.71 + khule trades $7.61 = $12.32  (shuru $100) | paise khatam hone se skip: 1864
+  Khule trades: 14  (abhi ki value $7.59)
+  Wallet: cash $4.71 + khule trades $7.59 = $12.30  (shuru $100) | paise khatam hone se skip: 1883
 
-Data: naye coins 18705 | inme se kitne pahunche -> 10K:1728 20K:956 30K:740 60K:536 100K:421
-      abhi dekh rahe coins 239 | DexScreener updates 3587815 (errors 4) | galat uchhal ignore 308 | SOL $89.07
+Data: naye coins 18857 | inme se kitne pahunche -> 10K:1741 20K:963 30K:746 60K:539 100K:424
+      abhi dekh rahe coins 254 | DexScreener updates 3618894 (errors 4) | galat uchhal ignore 354 | SOL $89.22
 ============================================================
