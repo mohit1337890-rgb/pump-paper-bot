@@ -1,51 +1,51 @@
 ============================================================
-REPORT  2026-11-08 09:17:21 UTC
+REPORT  2026-11-08 09:47:31 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
   Khule trades: 17  (abhi ki value $8.15)
-  Wallet: cash $3.37 + khule trades $8.15 = $11.52  (shuru $100) | paise khatam hone se skip: 8738
+  Wallet: cash $3.37 + khule trades $8.15 = $11.52  (shuru $100) | paise khatam hone se skip: 8747
 
 [A_sl40]  entry $30K-60K | exit: + 2x se pehle -40% pe becho
   Band trades: 26  (jeete 7, haare 19)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $8.30 + khule trades $0.00 = $8.30  (shuru $100) | paise khatam hone se skip: 8713
+  Wallet: cash $8.30 + khule trades $0.00 = $8.30  (shuru $100) | paise khatam hone se skip: 8722
 
 [A_t60]  entry $30K-60K | exit: + 60 min mein 2x nahi to becho
   Band trades: 42  (jeete 15, haare 27)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 8375
+  Wallet: cash $4.51 + khule trades $0.00 = $4.51  (shuru $100) | paise khatam hone se skip: 8384
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
-  Khule trades: 18  (abhi ki value $58.54)
-  Wallet: cash $-68.55 + khule trades $58.54 = $-10.01  (shuru $100) | paise khatam hone se skip: 13911
+  Khule trades: 18  (abhi ki value $58.50)
+  Wallet: cash $-68.55 + khule trades $58.50 = $-10.05  (shuru $100) | paise khatam hone se skip: 13947
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 17  (jeete 3, haare 14)
   Khule trades: 4  (abhi ki value $40.50)
-  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 13911
+  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 13947
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 30  (jeete 9, haare 21)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 13720
+  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 13756
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 20227
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 20307
 
-[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 3936) | exit: TP +15% / SL -7%
+[F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 3945) | exit: TP +15% / SL -7%
   Band trades: 107  (jeete 51, haare 56)
   Khule trades: 2  (abhi ki value $19.76)
   Wallet: cash $4.64 + khule trades $19.76 = $24.40  (shuru $100) | paise khatam hone se skip: 1406
 
-[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 4619) | exit: sirf Mohit ke rules
+[F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 4628) | exit: sirf Mohit ke rules
   Band trades: 6  (jeete 6, haare 0)
   Khule trades: 14  (abhi ki value $7.57)
   Wallet: cash $4.71 + khule trades $7.57 = $12.28  (shuru $100) | paise khatam hone se skip: 2209
 
-Data: naye coins 21111 | inme se kitne pahunche -> 10K:1944 20K:1116 30K:874 60K:642 100K:512
-      abhi dekh rahe coins 140 | DexScreener updates 4135183 (errors 4) | galat uchhal ignore 120 | SOL $89.07
+Data: naye coins 21191 | inme se kitne pahunche -> 10K:1950 20K:1121 30K:879 60K:644 100K:515
+      abhi dekh rahe coins 156 | DexScreener updates 4152040 (errors 4) | galat uchhal ignore 139 | SOL $89.19
 ============================================================
