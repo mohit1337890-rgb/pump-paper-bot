@@ -1,5 +1,5 @@
 ============================================================
-REPORT  2026-11-17 06:30:23 UTC
+REPORT  2026-11-17 12:18:43 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
@@ -18,8 +18,8 @@ REPORT  2026-11-17 06:30:23 UTC
 
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
-  Khule trades: 18  (abhi ki value $56.65)
-  Wallet: cash $-68.55 + khule trades $56.65 = $-11.90  (shuru $100) | paise khatam hone se skip: 49687
+  Khule trades: 18  (abhi ki value $56.47)
+  Wallet: cash $-68.55 + khule trades $56.47 = $-12.08  (shuru $100) | paise khatam hone se skip: 49687
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 17  (jeete 3, haare 14)
@@ -34,7 +34,7 @@ REPORT  2026-11-17 06:30:23 UTC
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 78190
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 78210
 
 [F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 16475) | exit: TP +15% / SL -7%
   Band trades: 107  (jeete 51, haare 56)
@@ -43,9 +43,9 @@ REPORT  2026-11-17 06:30:23 UTC
 
 [F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 17148) | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
-  Khule trades: 14  (abhi ki value $6.35)
-  Wallet: cash $6.25 + khule trades $6.35 = $12.61  (shuru $100) | paise khatam hone se skip: 10352
+  Khule trades: 14  (abhi ki value $6.36)
+  Wallet: cash $6.25 + khule trades $6.36 = $12.61  (shuru $100) | paise khatam hone se skip: 10352
 
-Data: naye coins 79074 | inme se kitne pahunche -> 10K:6364 20K:3822 30K:3012 60K:2188 100K:1788
-      abhi dekh rahe coins 165 | DexScreener updates 13256955 (errors 8) | galat uchhal ignore 399 | SOL $72.48
+Data: naye coins 79094 | inme se kitne pahunche -> 10K:6364 20K:3822 30K:3012 60K:2188 100K:1788
+      abhi dekh rahe coins 80 | DexScreener updates 13257840 (errors 8) | galat uchhal ignore 0 | SOL $73.17
 ============================================================
