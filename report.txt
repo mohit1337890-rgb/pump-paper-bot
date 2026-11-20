@@ -1,5 +1,5 @@
 ============================================================
-REPORT  2026-11-20 12:47:20 UTC
+REPORT  2026-11-20 15:58:55 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
@@ -43,9 +43,9 @@ REPORT  2026-11-20 12:47:20 UTC
 
 [F_mohit]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 19602) | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
-  Khule trades: 14  (abhi ki value $6.35)
-  Wallet: cash $6.25 + khule trades $6.35 = $12.60  (shuru $100) | paise khatam hone se skip: 11947
+  Khule trades: 14  (abhi ki value $6.33)
+  Wallet: cash $6.25 + khule trades $6.33 = $12.58  (shuru $100) | paise khatam hone se skip: 11947
 
 Data: naye coins 102272 | inme se kitne pahunche -> 10K:7340 20K:4268 30K:3262 60K:2311 100K:1851
-      abhi dekh rahe coins 62 | DexScreener updates 16044777 (errors 11) | galat uchhal ignore 10 | SOL $71.07
+      abhi dekh rahe coins 60 | DexScreener updates 16049301 (errors 11) | galat uchhal ignore 0 | SOL $68.25
 ============================================================
