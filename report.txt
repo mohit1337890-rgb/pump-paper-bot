@@ -1,5 +1,5 @@
 ============================================================
-REPORT  2026-11-25 14:51:59 UTC
+REPORT  2026-11-25 14:54:50 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
@@ -19,22 +19,22 @@ REPORT  2026-11-25 14:51:59 UTC
 [B_base]  entry $15K-35K | exit: sirf Mohit ke rules
   Band trades: 3  (jeete 3, haare 0)
   Khule trades: 18  (abhi ki value $55.79)
-  Wallet: cash $-68.55 + khule trades $55.79 = $-12.76  (shuru $100) | paise khatam hone se skip: 75112
+  Wallet: cash $-68.55 + khule trades $55.79 = $-12.76  (shuru $100) | paise khatam hone se skip: 75118
 
 [B_sl40]  entry $15K-35K | exit: + 2x se pehle -40% pe becho
   Band trades: 17  (jeete 3, haare 14)
   Khule trades: 4  (abhi ki value $40.50)
-  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 75112
+  Wallet: cash $-32.78 + khule trades $40.50 = $7.72  (shuru $100) | paise khatam hone se skip: 75118
 
 [B_t60]  entry $15K-35K | exit: + 60 min mein 2x nahi to becho
   Band trades: 30  (jeete 9, haare 21)
   Khule trades: 0  (abhi ki value $0.00)
-  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 74921
+  Wallet: cash $4.64 + khule trades $0.00 = $4.64  (shuru $100) | paise khatam hone se skip: 74927
 
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 127448
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 127456
 
 [F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 23109) | exit: TP +15% / SL -7%
   Band trades: 107  (jeete 51, haare 56)
@@ -46,6 +46,6 @@ REPORT  2026-11-25 14:51:59 UTC
   Khule trades: 14  (abhi ki value $6.20)
   Wallet: cash $6.25 + khule trades $6.20 = $12.45  (shuru $100) | paise khatam hone se skip: 14098
 
-Data: naye coins 128332 | inme se kitne pahunche -> 10K:8590 20K:4845 30K:3607 60K:2479 100K:1951
-      abhi dekh rahe coins 158 | DexScreener updates 19424457 (errors 25) | galat uchhal ignore 148 | SOL $66.42
+Data: naye coins 128340 | inme se kitne pahunche -> 10K:8590 20K:4845 30K:3607 60K:2479 100K:1951
+      abhi dekh rahe coins 154 | DexScreener updates 19425761 (errors 25) | galat uchhal ignore 148 | SOL $66.42
 ============================================================
