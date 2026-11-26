@@ -1,5 +1,5 @@
 ============================================================
-REPORT  2026-11-26 20:10:09 UTC
+REPORT  2026-11-26 20:15:30 UTC
 
 [A_base]  entry $30K-60K | exit: sirf Mohit ke rules
   Band trades: 7  (jeete 7, haare 0)
@@ -34,7 +34,7 @@ REPORT  2026-11-26 20:10:09 UTC
 [S_snipe]  launch pe turant kharido | 2x pe aadha, 5x pe baaki (loser hold)
   Band trades: 0  | 2x pe aadha bika (abhi khule): 2
   Khule trades: 12  (abhi ki value $118.01)
-  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 132444
+  Wallet: cash $9.99 + khule trades $88.02 = $98.01  (shuru $100) | paise khatam hone se skip: 132475
 
 [F_guide]  entry $30K-60K + filter (5min: 8+ buy, buy ratio 0.6+; filter ne roka: 24150) | exit: TP +15% / SL -7%
   Band trades: 107  (jeete 51, haare 56)
@@ -46,6 +46,6 @@ REPORT  2026-11-26 20:10:09 UTC
   Khule trades: 14  (abhi ki value $6.20)
   Wallet: cash $6.25 + khule trades $6.20 = $12.45  (shuru $100) | paise khatam hone se skip: 15055
 
-Data: naye coins 133328 | inme se kitne pahunche -> 10K:8838 20K:4963 30K:3708 60K:2521 100K:1969
-      abhi dekh rahe coins 175 | DexScreener updates 20059796 (errors 34) | galat uchhal ignore 223 | SOL $71.24
+Data: naye coins 133359 | inme se kitne pahunche -> 10K:8840 20K:4963 30K:3708 60K:2521 100K:1969
+      abhi dekh rahe coins 187 | DexScreener updates 20062687 (errors 34) | galat uchhal ignore 0 | SOL $71.27
 ============================================================
